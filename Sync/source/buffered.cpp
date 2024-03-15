@@ -12,11 +12,18 @@ int main()
     int neighbour_rank;
     MPI_Request R;
 
-    MPI_Send(&rank, 1, MPI_INT, (rank+1)%n_ranks, 0, MPI_COMM_WORLD);
+    int * buffer = new int();
+
+    MPI_Buffer_attach(buffer, sizeof(int));
+    MPI_Bsend(&rank, 1, MPI_INT, (rank+1)%n_ranks, 0, MPI_COMM_WORLD);
 
     MPI_Recv(&neighbour_rank, 1, MPI_INT, (rank-1)%n_ranks, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
     printf("My rank is %d and the neighbour is rank %d\n", rank, neighbour_rank);
+
+    int size_freed;
+    MPI_Buffer_detach(&buffer, &size_freed);
+    delete buffer;
 
     MPI_Finalize();
 

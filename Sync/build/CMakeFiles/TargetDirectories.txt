@@ -1,0 +1,7 @@
+/workspaces/COMP0210/Week9/week_9_exercises/Sync/build/CMakeFiles/edit_cache.dir
+/workspaces/COMP0210/Week9/week_9_exercises/Sync/build/CMakeFiles/rebuild_cache.dir
+/workspaces/COMP0210/Week9/week_9_exercises/Sync/build/source/CMakeFiles/Standard.dir
+/workspaces/COMP0210/Week9/week_9_exercises/Sync/build/source/CMakeFiles/Buffered.dir
+/workspaces/COMP0210/Week9/week_9_exercises/Sync/build/source/CMakeFiles/Synchronised.dir
+/workspaces/COMP0210/Week9/week_9_exercises/Sync/build/source/CMakeFiles/edit_cache.dir
+/workspaces/COMP0210/Week9/week_9_exercises/Sync/build/source/CMakeFiles/rebuild_cache.dir
